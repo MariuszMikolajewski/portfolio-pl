@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Mariusz Mikolajewski</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#analysis">Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill" onclick="window.location.href='#contact';">
+          Contact Me
+        </button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Mariusz Mikolajewski</span>
+          </h2>
+          <p class="text-muted">
+           In my professional career, I focus on development and consistently set new goals for myself. In
+            my work, I’ve used Python, SQL, SAS 4GL, Power BI, Tableau, SAS Visual Analytics, and AWS.
+            Currently, I am working at one of the largest companies offering the most popular sports and recreational
+            program, Multisport. In my role, I handle both basic and advanced analytics. In basic analytics, I
+            collaborate with the business side, preparing reports and interactive dashboards to assist in making daily
+            business decisions (SAS, Power BI). In advanced analytics, I have already created models such as
+            Sales Forecasts (Python Prophet), optimizing production and maximizing margins (Python Pulp), and I
+            am currently working on a churn model (Python Xgboost).
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" onclick="window.location.href='#contact';">
+            Hire Me
+          </button>
+          </a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/me.webp" class="img-fluid" alt="" style="max-width: 200%; height: auto;" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="analysis">
+      <div class="heading text-center">
+        <small>What I am doing</small>
+        <h3>
+          Provide Wide Range of <br />
+          Data Analysis
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img" style="display: flex; justify-content: center; align-items: center;">
+              <img
+                src="images/service_icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+          </div>
+            <div class="content mt-3">
+              <h4>Basic Analysis</h4>
+              <p class="text-muted">
+                Basic Data Analysis refers to the initial steps taken to explore and understand a dataset. It involves various methods and techniques to summarize, visualize, and interpret data to gain insights. The key steps in basic data analysis include:
+                </p>
+                <ul>
+                  <li>Data Collection: Gathering raw data from various sources such as databases, surveys, or APIs.</li>
+                  <li>Data Cleaning: Preparing the data by handling missing values, correcting errors, and removing duplicates to ensure accuracy.</li>
+                  <li>
+                    Exploratory Data Analysis (EDA): Using statistical and graphical techniques to uncover patterns, trends, and relationships within the data. This includes:
+                    <ul>
+                      <li>Descriptive Statistics: Calculating measures like mean, median, mode, variance, and standard deviation to summarize the data.</li>
+                      <li>Data Visualization: Creating plots such as histograms, bar charts, scatter plots, and box plots to visually inspect the data.</li>
+                    </ul>
+                  </li>
+                  <li>Data Transformation: Modifying the data into a suitable format for analysis, which may include normalizing, scaling, or encoding categorical variables.</li>
+                  <li>Hypothesis Testing: Applying statistical tests to make inferences or decisions based on data, helping to validate or refute assumptions.</li>
+                  <li>Conclusion and Reporting: Summarizing the findings in reports, dashboards, or presentations to communicate insights effectively.</li>
+                </ul>
+    <!--               <a href="" class="link">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img" style="display: flex; justify-content: center; align-items: center;">
+              <img
+                src="images/service_icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Machine Learning & AI</h4>
+              <p class="text-muted">
+                Machine Learning (ML) and Artificial Intelligence (AI) are cutting-edge fields that focus on creating systems capable of learning from data and making intelligent decisions. The core aspects of Machine Learning and AI include:
+              </p>
+              <ul>
+                <li>Data Collection: Gathering large volumes of data from various sources to train and improve models.</li>
+                <li>Data Preprocessing: Cleaning and transforming raw data into a format suitable for training machine learning models.</li>
+                <li>
+                  Model Training: Developing algorithms that can learn patterns from data. Common techniques include:
+                  <ul>
+                    <li>Supervised Learning: Training models on labeled data to make predictions or classifications.</li>
+                    <li>Unsupervised Learning: Finding hidden patterns or structures in data without predefined labels.</li>
+                    <li>Reinforcement Learning: Training models to make decisions by rewarding desired outcomes and penalizing undesired ones.</li>
+                  </ul>
+                </li>
+                <li>Model Evaluation: Testing the accuracy and performance of models using validation datasets and metrics such as accuracy, precision, recall, and F1-score.</li>
+                <li>Deployment: Integrating trained models into real-world applications, such as recommendation systems, chatbots, or autonomous vehicles.</li>
+                <li>Continuous Learning: Updating models with new data to improve performance over time and adapt to changing environments.</li>
+              </ul>
+<!--               <a href="" class="link">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img" style="display: flex; justify-content: center; align-items: center;">
+              <img
+                src="images/service_icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Consulting</h4>
+              <p class="text-muted">
+                Consulting involves providing expert advice to help businesses solve complex challenges, improve performance, and achieve their strategic goals. The key areas of consulting include:
+              </p>
+              <ul>
+                <li>Business Strategy: Developing comprehensive strategies to guide organizations towards long-term success and growth.</li>
+                <li>Operations Consulting: Analyzing and optimizing business processes to improve efficiency and reduce costs.</li>
+                <li>
+                  Financial Advisory: Offering guidance on financial planning, budgeting, and investment to ensure sustainable financial health. This includes:
+                  <ul>
+                    <li>Risk Management: Identifying and mitigating potential risks to protect the business from financial losses.</li>
+                    <li>Finance Impacts: mpacts such as the impact of changes in production, availability of parts, credit, changes in currency rates /li>
+                  </ul>
+                </li>
+                <li>Technology Consulting: Assisting organizations in selecting and implementing the right technology solutions to enhance productivity and innovation.</li>
+                <li>Change Management: Guiding organizations through periods of transformation to ensure smooth transitions and employee buy-in.</li>
+              </ul>
+<!--               <a href="" class="link">Read More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">80%</span>
+                </div>
+<!--                 <img src="images/python.png" alt="Python" class="skill-icon" /> -->
+                <br />
+                <span class="text">Python</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">75%</span>
+                </div>
+                <br />
+                <span class="text">SQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">60%</span>
+                </div>
+                <br />
+                <span class="text">Tableu</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">92%</span>
+                </div>
+                <br>
+                <span class="text">Power Bi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Analysis & Machine Learning projects</h3>
+            <p class="text-muted">
+              Developing and implementing predictive churn model utilizing Xgboost to
+              forecast customer attrition, contributing to a increase in retention rates. (SQL, Python, SAS 4GL)
+              <ul>
+                <li> Target - Earlier communication to retain the customer, 5-10% increase in revenue per year </li>
+              </ul>
+            <br>
+            </p>
+            <p class="text-muted">
+              Building sale forecast model using PROPHET in day interval by each group (Python, SAS VA)
+              <ul>
+                <li> Target - Preapare sales plan for the future with including customer behavior, 2-7% increase in revenue per year </li>
+              </ul>
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="MariuszMikolajewskiCV.pdf"
+                download="SampleCV"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="Power_Bi_dashboards">Dashboards</button>
+        <button class="filter-item" data-filter="Basic_analysis">Basic Analysis</button>
+        <button class="filter-item" data-filter="Correlation">Correlation</button>
+        <button class="filter-item" data-filter="Prediction">Prediction</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 Power_Bi_dashboards col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/power_bi.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Power Bi dashboards</h4>
+                <span class="badge bg-secondary badge-pill">PowerBI</span>
+                <span class="badge bg-secondary badge-pill">DAX</span>
+                <span class="badge bg-secondary badge-pill mb-2">Dashboards</span>
+                <br />
+                <p class="text-muted">
+                Dashboards are visual displays of key metrics and data, designed to provide an at-a-glance view of an organization's performance or specific processes. 
+                They aggregate information from various sources, presenting it in a cohesive and easily digestible format through charts, graphs, and other visual elements. 
+                Dashboards are essential for decision-making as they offer real-time insights, highlight trends, and help identify areas that require attention. 
+                They enable users to monitor:
+                </p>
+                <ul class="model-stats">
+                  <li> progress,</li>
+                  <li> track goals,</li>
+                  <li> make informed decisions quickly by consolidating critical information in one place.</li>
+                </ul>
+<!--                 <a href="#" class="link">Read More</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 Basic_analysis col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/Basic_analysis.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Basic analysis</h4>
+                <span class="badge bg-secondary badge-pill">SQL</span>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill mb-2">Basic analysis</span>
+                <br />
+                <p class="text-muted">
+                Basic analysis involves examining fundamental data trends, patterns, and summaries to gain insights into business performance. 
+                This type of analysis helps companies understand their current operations, identify inefficiencies, and spot opportunities for improvement. 
+                By leveraging basic analysis:
+                </p>
+                <ul class="model-stats">
+                  <li> companies can make informed decisions,</li>
+                  <li> optimize resources,</li>
+                  <li> and enhance overall productivity, leading to better strategic planning and competitive advantage.</li>
+                </ul>
+<!--                 <a href="#" class="read-more-btn link">Read More</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 Correlation col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/Correlation.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Correlation</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill mb-2">Basic analysis</span
+                ><br />
+                <p class="text-muted">
+                Correlation measures the relationship between two variables, indicating how changes in one variable are associated with changes in another. 
+                Understanding correlation helps businesses identify patterns and potential predictive insights, which can improve decision-making and strategic planning.
+                </p>
+<!--                 <a href="#" class="read-more-btn link">Read More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 Prediction col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/macierz_pomylek.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Churn</h4>
+                <span class="badge bg-secondary badge-pill">sklearn</span>
+                <span class="badge bg-secondary badge-pill">python</span>
+                <span class="badge bg-secondary badge-pill">tensorflow</span>
+                <span class="badge bg-secondary badge-pill mb-2">Prediction</span
+                ><br />
+                <p class="text-muted">
+                Above is the confusion matrix for the study of customer behavior with an assessment of the likelihood of churn within the next 2 months.
+                </p>
+                <ul class="model-stats">
+                  <li> The model's precision on the data was approximately 83.09%.</li>
+                  <li> The model's recall (sensitivity) on the data was approximately 83.75%.</li>
+                  <li> The model's accuracy on the data was approximately 96.89%.</li>
+                </ul>
+<!--                 <a href="#" class="read-more-btn link">Read More</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 Prediction col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/segmentation.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Segmentation</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill">Sklrean</span>
+                <span class="badge bg-secondary badge-pill mb-2">Prediction</span
+                ><br />
+                <p class="text-muted">
+                Segmentation in data analysis often utilizes clustering algorithms to group similar data points. 
+                Some of the best models for segmentation include K-Means, DBSCAN (Density-Based Spatial Clustering of Applications with Noise), and hierarchical clustering, 
+                each offering unique methods for identifying patterns and grouping data. Popular models:
+                </p>
+                <ul class="model-stats">
+                  <li> K-Means</li>
+                  <li> DBSCAN</li>
+                  <li> Hierarchical Clustering</li>
+                  <li> Agglomerative Clustering</li>
+<!--                 <a href="#" class="read-more-btn link">Read More</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 Prediction col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/sale_forecast.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Sale forecast</h4>
+                <span class="badge bg-secondary badge-pill">Prophet</span>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill mb-2">Prediction</span>
+                <br />
+                <p class="text-muted">
+                Prophet is particularly useful for business applications where historical data can be leveraged to predict future trends,
+                  with automatic adjustments for holidays and special events. Prophet is easy to use, requiring minimal tuning, 
+                  and provides reliable forecasts even with complex seasonalities and irregular data.
+                </p>
+<!--                 <a href="#" class="read-more-btn link">Read More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>03-185, Warsaw, Poland</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+48 509 747 406</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>mikolajewski.m.mariusz@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>mariuszmikolajewski.github.io/portfolio/#</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#analysis">Analysis</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill linkedin">
+          <i class="bi bi-linkedin"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="script.js"></script>
+    
+  </body>
+</html>
